@@ -8,34 +8,60 @@ TRAITS = ["Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neu
 # Expanded Questions with Tags
 # Tags: 'all', 'student', 'worker', 'retired', 'young', 'mature'
 QUESTIONS_POOL = [
+    # General (All)
     {"id": 1, "text": "I have a vivid imagination.", "trait": "Openness", "tags": ["all"]},
     {"id": 2, "text": "I get chores done right away.", "trait": "Conscientiousness", "tags": ["all"]},
     {"id": 3, "text": "I am the life of the party.", "trait": "Extraversion", "tags": ["all"]},
     {"id": 4, "text": "I sympathize with others' feelings.", "trait": "Agreeableness", "tags": ["all"]},
     {"id": 5, "text": "I get stressed out easily.", "trait": "Neuroticism", "tags": ["all"]},
+    {"id": 6, "text": "I have a rich vocabulary.", "trait": "Openness", "tags": ["all"]},
+    {"id": 7, "text": "I pay attention to details.", "trait": "Conscientiousness", "tags": ["all"]},
+    {"id": 8, "text": "I talk to a lot of different people at parties.", "trait": "Extraversion", "tags": ["all"]},
+    {"id": 9, "text": "I feel others' emotions.", "trait": "Agreeableness", "tags": ["all"]},
+    {"id": 10, "text": "I get upset easily.", "trait": "Neuroticism", "tags": ["all"]},
     
     # Student specific
     {"id": 11, "text": "I often explore new subjects outside my curriculum.", "trait": "Openness", "tags": ["student"]},
     {"id": 12, "text": "I submit my assignments well before the deadline.", "trait": "Conscientiousness", "tags": ["student"]},
     {"id": 13, "text": "I prefer studying in groups rather than alone.", "trait": "Extraversion", "tags": ["student"]},
-    
+    {"id": 14, "text": "I enjoy deep discussions about complex topics.", "trait": "Openness", "tags": ["student"]},
+    {"id": 15, "text": "I keep my study notes organized.", "trait": "Conscientiousness", "tags": ["student"]},
+    {"id": 16, "text": "I participate in campus clubs.", "trait": "Extraversion", "tags": ["student"]},
+    {"id": 17, "text": "I help classmates with their studies.", "trait": "Agreeableness", "tags": ["student"]},
+    {"id": 18, "text": "Exams make me very nervous.", "trait": "Neuroticism", "tags": ["student"]},
+
     # Worker specific
     {"id": 21, "text": "I constantly look for better ways to do my job.", "trait": "Openness", "tags": ["worker"]},
     {"id": 22, "text": "I keep my workspace organized and tidy.", "trait": "Conscientiousness", "tags": ["worker"]},
     {"id": 23, "text": "I take charge in team meetings.", "trait": "Extraversion", "tags": ["worker"]},
     {"id": 24, "text": "I try to mediate conflicts between colleagues.", "trait": "Agreeableness", "tags": ["worker"]},
+    {"id": 25, "text": "I think about how to improve work processes.", "trait": "Openness", "tags": ["worker"]},
+    {"id": 26, "text": "I am always prepared for meetings.", "trait": "Conscientiousness", "tags": ["worker"]},
+    {"id": 27, "text": "I enjoy team building activities.", "trait": "Extraversion", "tags": ["worker"]},
+    {"id": 28, "text": "I try to make the workplace pleasant for everyone.", "trait": "Agreeableness", "tags": ["worker"]},
+    {"id": 29, "text": "Work deadlines stress me out.", "trait": "Neuroticism", "tags": ["worker"]},
     
     # Age based (Young < 30)
     {"id": 31, "text": "I enjoy trying out new trends and fads.", "trait": "Openness", "tags": ["young"]},
     {"id": 32, "text": "I worry about my future career path.", "trait": "Neuroticism", "tags": ["young"]},
+    {"id": 33, "text": "I love traveling to exotic places.", "trait": "Openness", "tags": ["young"]},
+    {"id": 34, "text": "I am diligent with my personal goals.", "trait": "Conscientiousness", "tags": ["young"]},
+    {"id": 35, "text": "I have a large circle of friends.", "trait": "Extraversion", "tags": ["young"]},
+    {"id": 36, "text": "I trust people easily.", "trait": "Agreeableness", "tags": ["young"]},
+    {"id": 37, "text": "I often feel overwhelmed by life.", "trait": "Neuroticism", "tags": ["young"]},
     
     # Age based (Mature >= 30)
     {"id": 41, "text": "I prefer established routines over surprises.", "trait": "Conscientiousness", "tags": ["mature"]},
-    {"id": 42, "text": "I feel secure in my life choices.", "trait": "Neuroticism", "tags": ["mature"]}, # Reverse coded logic handled in scoring? For simplicity, we'll assume high score = high neuroticism, so this might need context. Let's keep it simple: "I worry about stability"
+    {"id": 42, "text": "I feel secure in my life choices.", "trait": "Neuroticism", "tags": ["mature"]},
     {"id": 43, "text": "I worry about financial stability.", "trait": "Neuroticism", "tags": ["mature"]},
+    {"id": 44, "text": "I appreciate art and beauty.", "trait": "Openness", "tags": ["mature"]},
+    {"id": 45, "text": "I follow a schedule every day.", "trait": "Conscientiousness", "tags": ["mature"]},
+    {"id": 46, "text": "I enjoy hosting family gatherings.", "trait": "Extraversion", "tags": ["mature"]},
+    {"id": 47, "text": "I am interested in people.", "trait": "Agreeableness", "tags": ["mature"]},
+    {"id": 48, "text": "I worry about things I cannot control.", "trait": "Neuroticism", "tags": ["mature"]},
 ]
 
-# Archetypes (Same as before)
+# Archetypes
 ARCHETYPES = {
     "The Visionary": [90, 70, 60, 60, 40],
     "The Executor": [40, 90, 70, 50, 30],

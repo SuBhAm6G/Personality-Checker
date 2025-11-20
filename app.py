@@ -102,26 +102,6 @@ def inject_retro_theme():
             box-shadow: 
                 0 0 30px rgba(255, 190, 11, 0.9),
                 12px 12px 0px rgba(51, 134, 252, 0.6);
-        }
-
-        .stButton > button:active {
-            transform: translate(0, 0);
-        }
-
-        /* Slider */
-        .stSlider > div > div > div > div {
-            background: linear-gradient(90deg, #ff006e, #3a86ff);
-        }
-
-        .stSlider div[role="slider"] {
-            background-color: #ffbe0b !important;
-            border: 3px solid #ff006e !important;
-            box-shadow: 0 0 15px rgba(255, 0, 110, 0.8);
-        }
-
-        /* Progress Bar */
-        .stProgress > div > div > div > div {
-            background: linear-gradient(90deg, #ff006e, #fb5607, #ffbe0b);
             box-shadow: 0 0 20px rgba(255, 0, 110, 0.8);
         }
 

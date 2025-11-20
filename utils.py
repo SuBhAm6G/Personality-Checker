@@ -3,8 +3,6 @@ import pandas as pd
 from textblob import TextBlob
 from sklearn.neighbors import NearestNeighbors
 
-# --- Constants & Configuration ---
-
 TRAITS = ["Openness", "Conscientiousness", "Extraversion", "Agreeableness", "Neuroticism"]
 
 # Expanded Questions with Tags
@@ -47,10 +45,7 @@ ARCHETYPES = {
     "The Balanced Realist": [50, 50, 50, 50, 50]
 }
 
-def get_questions(age, occupation):
-    """
-    Returns a list of questions filtered by user demographics.
-    """
+def get_questions(age, occupation): #Returns a list of questions.
     age = int(age)
     selected_questions = []
     
@@ -85,10 +80,7 @@ def analyze_text_input(text):
     adjustments = np.array([subjectivity * 10, 0, sentiment * 5, sentiment * 10, -sentiment * 10])
     return adjustments
 
-def calculate_scores(answers, questions_list, text_input=None):
-    """
-    Calculates scores based on the specific list of questions asked.
-    """
+def calculate_scores(answers, questions_list, text_input=None): 
     raw_scores = {t: 0 for t in TRAITS}
     counts = {t: 0 for t in TRAITS}
     
